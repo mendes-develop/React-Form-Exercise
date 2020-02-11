@@ -18,8 +18,9 @@ class TwitterMessage extends React.Component {
           name="message" 
           id="message" 
           value={this.state.message} 
-          onChange={ (e)=> this.setState({[e.target.name] : e.target.value})} />
-          <p>characters left {this.props.maxChars - this.state.message.length}</p>
+          onChange={ (e)=> this.setState({[e.target.name] : e.target.value})} 
+        />
+        <p>characters left {this.props.maxChars - this.state.message.length}</p>
       </div>
     );
   }

@@ -15,7 +15,6 @@ class LoginForm extends React.Component {
     return (
       <form onSubmit={(e)=> {
         e.preventDefault()
-
         return this.props.handleLogin(this.state)
       
       }}>
